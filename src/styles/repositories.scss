@@ -1,0 +1,74 @@
+$color-primamy: #8257e6;
+$bg-color: rgb(231, 227, 227);
+
+section.repositoryList {
+  margin: 40px;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: $color-primamy;
+    margin-bottom: 2rem;
+    
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 3px;
+      height: 25px;
+      // background: $color-primamy;
+      border-left: 1.5px dashed #8257e6;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    li {
+      width: 400px;
+      height: 170px;
+      background-color: $bg-color;
+      padding: 1rem;
+      border-radius: 15px;
+      margin: 1rem 1rem 0 0;
+
+      border: .5px dashed #8257e6;
+
+      .titleRepo {
+        font-size: 1.2rem;
+        color: rgba(6, 2, 7, 0.753);
+      }
+
+      p {
+        font-size: 0.75rem;
+        color: #444;
+        margin-top: 8px;
+      }
+  
+      a {
+        display: inline-block;
+        margin-top: 1rem;
+        text-decoration: none;
+        background-color: $color-primamy;
+        color: #fff;
+        border: 1px solid $color-primamy;
+        padding: .5rem 1rem;
+        border-radius: 5px;
+        transition: .2s linear;
+  
+        &:hover {
+          color: $color-primamy;
+          background-color: transparent;
+          -webkit-box-shadow: 0px 0px 16px 0px rgba(130,87,230,1);
+          -moz-box-shadow: 0px 0px 16px 0px rgba(130,87,230,1);
+          box-shadow: 0px 0px 16px 0px rgba(130,87,230,1);
+  
+        }
+    }
+    }
+  }
+}
